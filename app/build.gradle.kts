@@ -43,6 +43,9 @@ dependencies {
     val constraintLayoutVersion = "2.2.0"
     val cameraXVersion = "1.4.0"
     val mlKitVersion = "16.0.1"
+    val translateVersion = "17.0.3"
+    val barcodeVersion = "18.3.1"
+    val cameraMlKitVersion = "1.4.0"
 
     implementation("androidx.core:core-ktx:$coreKtxVersion")
     implementation("androidx.appcompat:appcompat:$appCompatVersion")
@@ -54,4 +57,8 @@ dependencies {
     implementation("androidx.camera:camera-view:$cameraXVersion")
 
     implementation("com.google.mlkit:text-recognition:$mlKitVersion")
+    implementation("com.google.mlkit:translate:$translateVersion")
+
+    implementation("com.google.android.gms:play-services-mlkit-barcode-scanning:$barcodeVersion")
+    implementation("androidx.camera:camera-mlkit-vision:$cameraMlKitVersion")
 }
